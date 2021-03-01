@@ -1,0 +1,230 @@
+body {
+    background-color: #184E77;
+    color: #D9ED92;
+    font-size: 1.3em;
+    font-family: monospace;
+}
+
+a {
+    color: #D9ED92;
+}
+
+
+/* HEADER */
+
+header {
+    border-bottom: 3px dashed #52B69A;
+    width: 95%;
+    margin: 0 auto;
+    letter-spacing: 0.5em;
+    text-align: center;
+    font-style: italic;
+}
+
+    header h1 {
+        letter-spacing: 0.5em;
+        text-transform: uppercase;
+        font-weight: 930;
+        margin:5px 0 0 0;
+        text-decoration: overline;
+    }
+
+    header h2 {
+        font-weight: 920;
+        text-decoration: underline;
+        margin: 0;
+        letter-spacing: 0.5em;
+    }
+
+    header nav {
+        margin-bottom: 20px;
+        margin-top: 5px;
+        padding: 10px 0;
+    }
+
+        .header-menu {
+            border: 2px solid #52B69A;
+            border-radius: 15px;
+            list-style: none;
+            padding: 10px 15px;
+            margin: 0;
+        }
+
+        .header-menu li {
+            display: inline-block;
+            width: 40%;
+            padding: 5px 0 5px 0;
+        }
+
+        .header-menu li:hover {
+            background-color: #1E6091;
+            border-radius: 10px;
+        }
+
+        .header-menu a {
+            text-decoration: none;
+        }
+
+
+/* MAIN */
+
+main {
+    width: 95%;
+    margin:0 auto;
+    margin-top: 15px;
+    border-left: 3px dashed #52B69A;
+    border-right: 3px dashed #52B69A;
+} 
+
+figure {
+    border: 4px solid #52B69A;
+    background-color: #1E6091;
+    width: max-content;
+    padding: 20px;
+}
+
+figure img {
+    height: 200px;
+}
+
+article ,p {
+    width: 90%;
+    margin: 0 auto;
+    word-spacing: 0.3em;
+    padding: 10px 20px;
+}
+
+
+/* FOOTER */
+
+footer {
+    width: 95%;
+    margin: 10px auto 0 auto;
+    border-top: 3px dashed #52B69A;
+    margin-top: 20px;
+    color: gray;
+    font-style: italic;
+    text-align: center;
+}
+
+    footer h2 {
+        margin: 20px 0 0 0;
+    }
+
+    footer ul {
+        width: max-content;
+        margin: 10px auto;
+        padding: 0;
+        list-style: square;
+        color:darkgray;
+    }
+
+        footer li {
+            display: inline;
+            padding: 0 10px;
+        }
+
+        footer a {
+            text-decoration: none;
+        }
+
+
+/* MEDIA QUERIES  MIN 1024PX*/
+
+@media (min-width: 1024px) {
+    body {
+        background-color: #cc561e;
+        color: #beca5c;
+        font-size: 1em;
+        line-height: 1.6em;
+    }
+           
+
+/* MEDIA QUERIES HEADER */
+
+    header {
+        margin-top: 20px;
+        width: 80%;
+        border-color: #ef8d32;
+        font-size: 1.3em
+    }
+
+        header h1, header h2 {
+            letter-spacing: 1.5em;
+            margin-top: 20px;
+        }
+
+        header nav {
+            width: max-content;
+            margin: 0 auto;
+        }
+        
+        .header-menu {
+            border-color: #ef8d32;
+            padding: 25px 0;
+        }
+
+        .header-menu li {
+            width: max-content;
+            padding: 10px 25px;
+            display: inline;
+        }
+
+        .header-menu li:hover {
+            background-color: #aa2b1d;
+        }
+
+
+/* MEDIA QUERIES MAIN */
+
+    main {
+        width: 80%;
+        border-color: #ef8d32;
+    }
+
+        figure {
+            background-color: #aa2b1d;
+            border-color: #ef8d32;
+        }
+
+        figure img {
+            width: 350px;
+            height: auto;
+        }
+
+
+/* MEDIA QUERIES FOOTER */
+
+    footer {
+        width: 80%;
+        border-color: #ef8d32;
+        color: #fff;
+    }
+}
+
+
+/* MEDIA QUERIES MIN 1300PX */
+
+/* ik wilde graag het menu naast de headtexts hebben staan maar bij een scherm kleiner dan 1300px viel de text in het menu gedeelte.
+het text gedeelde float naar rechts, extra querie gemaakt om dit alsnog te krijgen bij een scherm vanaf dan 1300 pixels */
+
+@media (min-width: 1300px){
+
+    header nav {
+        margin: 0;
+    }
+
+    .heading-text {
+        float: right;
+        width: max-content;
+        margin-top: 25px;
+    }
+
+    .header-menu {
+        padding: 10px;
+    }
+
+    .header-menu li {
+        display: block;
+    }
+}
